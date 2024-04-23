@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MIS 221 Practice</title>
+    <link rel="stylesheet" href="/root/styles/main.css" />
+    <link rel="stylesheet" href="/root/styles/testPage.css" />
+  </head>
+
+  <body class="light-theme">
+    <header class="page-header">
+      <div class="header-image-container">
+        <img class="header-image2"
+          src="/root/images/Pictures/A_Square_Logo_4c.jpg"
+          alt="Project Image">
+      </div>
+      <div class="header-image-container">
+        <img class="header-image"
+          src="/root/images/Pictures/University_of_Alabama.jpg"
+          alt="Project Image">
+      </div>
+      <nav class="navigation">
+        <a href="/root/pages/homePage.html">Home</a>
+        <a href="/root/pages/randomQuestionPage.html">Random Question</a>
+        <a href="/root/pages/testPage.html">Take Test</a>
+      </nav>
+    </header>
+  </body>
+
+    <h1>Code Output Checker</h1>
+
+    <div id="codeContainer"></div>
+
+    <script src="/root/scripts/CorrectAnswers.js"></script>
+    <script src="/root/scripts/GenerateTest.js"></script>
+    <script src="/root/scripts/CheckAnswer.js"></script>
+
+    <script>
+      generateCodeContainers();
+    </script>
+
+    <footer class="page-footer" id="footer">
+      <p>&copy; University of Alabama Management Information Systems</p>
+    </footer>
+
+    <script>
+      window.addEventListener("scroll", function () {
+        var footer = document.querySelector(".page-footer");
+        var scrollPosition = window.scrollY + window.innerHeight;
+        var pageHeight = document.body.offsetHeight;
+
+        // If scrolled to the bottom of the page, show the footer
+        if (scrollPosition >= pageHeight) {
+          footer.style.display = "block";
+        } else {
+          footer.style.display = "none";
+        }
+      });
+    </script>
+    <noscript>You need to enable Javascript to view the full site.</noscript>
+  </body>
+</html>

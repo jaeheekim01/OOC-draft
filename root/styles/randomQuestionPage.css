@@ -1,0 +1,78 @@
+/* Add your CSS styles here */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+}
+
+.check-button {
+  background-color: #586358;
+  /* Green */
+  border: none;
+  color: white;
+  padding: 10px 32px;
+  margin-left: 5px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 100px;
+  /* Add bottom margin */
+  cursor: pointer;
+  border-radius: 10px;
+  /* Add border radius for rounded corners */
+}
+
+.check-button:hover {
+  background-color: #000000;
+  color: white;
+}
+
+#questionDisplay {
+  margin-top: 20px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+.input-box {
+  width: 100%;
+  padding: 5px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  resize: vertical; /* Allow vertical resizing */
+}
+.correct {
+  background-color: lightgreen;
+}
+
+.incorrect {
+  background-color: salmon;
+}
+
+.generate-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .generate-button:hover {
+    background-color: #072642; /* Grey color on hover */
+    color: white;
+  }
+  

@@ -1,0 +1,187 @@
+:root {
+  --white: #ffffff;
+  --black: #000000;
+  --crimson: #7a0b21;
+}
+
+body {
+  background-color: var(--white);
+  color: var(--black);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.page-header {
+  background-color: #7a0b21;
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+  text-align: left; /* Align header content to the left */
+  padding-left: 20px; /* Add some padding to the left */
+}
+.header-image-container {
+  display: inline-block;
+}
+
+.header-image {
+  width: 200px; /* Set the width to your desired size */
+  height: 50px; /* Maintain aspect ratio */
+}
+.header-image2 {
+  width: 50px; /* Set the width to your desired size */
+  height: 50px; /* Maintain aspect ratio */
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation {
+  position: absolute;
+  top: 35px; /* Adjust as needed */
+  right: 20px; /* Adjust as needed */
+  font-family: Arial, sans-serif; /* Use a better font */
+}
+
+.navigation a {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px; /* Add some spacing between links */
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none; /* Remove underline */
+  font-size: 18px; /* Adjust font size as needed */
+  transition: all 0.3s ease;
+}
+
+.navigation a::before,
+.navigation a::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.navigation a::before {
+  top: -2px;
+  left: -2px;
+}
+
+.navigation a::after {
+  bottom: -2px;
+  right: -2px;
+}
+
+.navigation a:hover::before,
+.navigation a:hover::after {
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+}
+
+.navigation a:hover::before {
+  border-bottom-color: white;
+  border-right-color: white;
+}
+
+.navigation a:hover::after {
+  border-top-color: white;
+  border-left-color: white;
+}
+
+.content2 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  padding-bottom: 150px;
+}
+.content {
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  text-align: right;
+  padding: 20px;
+  margin-top: 100px;
+  color: #7a0b21; /* Change text color to white for better readability */
+}
+
+/* CSS styles for the footer */
+.page-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #7a0b21;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  display: none; /* Initially hide the footer */
+  clear: both;
+  margin-top: 10000px;
+}
+
+section {
+  padding: 20px;
+  margin-top: 40px; /* Adjust this margin to accommodate the fixed header */
+  margin-bottom: 40px; /* Adjust this margin to accommodate the fixed footer */
+}
+
+.homePageBackground {
+  background-image: url("/root/images/Pictures/water_crimson.jpg");
+  background-size: calc(
+    100% - 70px
+  ); /* Adjusts the background size to cover the page with a 20px gap */
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding: 20px; /* Add padding around the background image */
+  height: 100vh; /* Ensures the background covers the entire viewport */
+}
+
+.content {
+  padding: 20px;
+  width: 600px;
+  color: white;
+}
+.welcomeText {
+  padding: 20px;
+  width: 600px;
+  margin-left: 60%;
+  margin-top: -50px;
+  color: white;
+  text-align: center;
+}
+.welcomeText h1 {
+  font-size: 45px; /* Adjust the size as needed */
+}
+.circle-image {
+  position: absolute;
+  left: 50px; /* Adjust as needed */
+  top: 275px; /* Adjust as needed */
+  transform: translateY(-50%); /* Center vertically */
+  width: 550px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+}
+.content {
+  padding: 20px;
+  padding-left: 240px; /* Adjust to accommodate the width of the image */
+  position: relative; /* Position relative to allow absolute positioning of image */
+}
+
+.homepageButton {
+  padding: 12px 24px; /* Increase button padding */
+  background-color: transparent;
+  border-color: #fff;
+  color: #fff;
+  border-radius: 6px; /* Increase button border radius */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px; /* Adjust font size */
+  font-weight: bold; /* Make text bold */
+  width: 300px;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: #ffffff;
+  color: #7a0b21;
+}
