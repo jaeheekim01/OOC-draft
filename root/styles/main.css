@@ -128,7 +128,7 @@ section {
 }
 
 .homePageBackground {
-  background-image: url("/root/images/Pictures/water_crimson.jpg");
+  background-image: url("../images/Pictures/water_crimson.jpg");
   background-size: calc(
     100% - 70px
   ); /* Adjusts the background size to cover the page with a 20px gap */

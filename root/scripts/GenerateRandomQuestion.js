@@ -90,7 +90,7 @@ function getFilesByCategory(category) {
 function displayQuestion(imageFileName, correctAnswer) {
   var questionDisplay = document.getElementById("questionDisplay");
   questionDisplay.innerHTML =
-    "<h2>Generated Question:</h2><img src='/root/images/Questions/" + 
+    "<h2>Generated Question:</h2><img src='../images/Questions/" + 
     imageFileName +
     "' alt='Question Image'>" +
     "<div id='answerContainer'></div>"; // Create a container for the answer elements

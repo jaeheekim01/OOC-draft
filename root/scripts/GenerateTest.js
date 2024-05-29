@@ -11,7 +11,7 @@ function generateCodeContainers() {
     codeDiv.appendChild(questionLabel);
 
     var img = document.createElement("img");
-    img.src = "/root/images/Questions/" + fileName; // Adjust the path as needed
+    img.src = "../images/Questions/" + fileName; // Adjust the path as needed
     img.alt = "Code " + (index + 1);
     codeDiv.appendChild(img);
 
